@@ -148,8 +148,6 @@ async def main():
 
 
 
-
 if __name__ == '__main__':
     results = asyncio.run(main())
     print(results)
-    asyncio.run(download_file("https://datashare.nida.nih.gov/sites/default/files/studydocs/19926/CENIC-P1S1%20Protocol-SAP.pdf"))
