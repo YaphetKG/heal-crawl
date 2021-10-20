@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+import httpx
 import asyncio
 from functools import reduce
 import json
@@ -149,7 +150,6 @@ async def main():
 
 
 if __name__ == '__main__':
-    # results = asyncio.run(main())
-    # print(results)
-    # asyncio.run(download_file("https://datashare.nida.nih.gov/sites/default/files/studydocs/19926/CENIC-P1S1%20Protocol-SAP.pdf"))
-    parse_pdf("C:\\Users\\kebedey\\projects\\helx\\heal-crawl\\src\\data\\CENIC-P1S1 Protocol-SAP.pdf")
+    results = asyncio.run(main())
+    print(results)
+    asyncio.run(download_file("https://datashare.nida.nih.gov/sites/default/files/studydocs/19926/CENIC-P1S1%20Protocol-SAP.pdf"))

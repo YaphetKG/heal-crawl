@@ -1,7 +1,7 @@
 import httpx
 from urllib import parse
-from pathlib import  Path
-import tqdm
+from pathlib import Path
+from tqdm import tqdm
 
 async def download_file(file_url, data_path='data/'):
     file = parse.unquote(file_url.split("/")[-1])
